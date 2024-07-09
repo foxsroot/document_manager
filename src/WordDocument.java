@@ -13,6 +13,7 @@ public class WordDocument extends Document {
     }
 
     public WordDocument(WordDocument target) {
+        //ini constructor buat clone. Bisa copy objek" yg private jg. Misalkan ada atribut" yg private dan cuma bisa diakses dari dalem class, bisa dicopy juga di sini
         super(target);
         this.fontType = target.fontType;
         this.fontSize = target.fontSize;
@@ -45,6 +46,6 @@ public class WordDocument extends Document {
 
     @Override
     public WordDocument clone() {
-        return new WordDocument(this);
+        return new WordDocument(this); //panggil constructor buat clone
     }
 }

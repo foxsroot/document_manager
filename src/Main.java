@@ -10,7 +10,7 @@ public class Main {
 
         documents.add(tugasPBO);
 
-        WordDocument cloneDocument = tugasPBO.clone();
+        WordDocument cloneDocument = tugasPBO.clone(); //clone objek tugasPBO ke cloneDocument
         cloneDocument.setContent("Ini dokumen yg diclone :)");
 
         documents.add(cloneDocument);
